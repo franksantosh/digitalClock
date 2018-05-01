@@ -1,0 +1,44 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+main{
+	
+	margin: auto;
+	color: black;
+	display: block;
+
+}
+.Sydney, .Berlin, .Newyork, .Kathmandu{
+	height: 100vh;
+	width: 100%; 
+}
+.digital{
+	padding-top: 20%;
+	width: 35%;
+	margin: 0 auto;
+}
+h3,h4{
+	color: #e9e9e9;
+	text-align: center;
+	font-size: 50px;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.Sydney{
+	background-image: url("image/sydney.jpg");
+	background-size: cover;
+}
+.Berlin{
+	background-image: url("image/berlin.jpg");
+	background-size: cover;
+}
+.Newyork{
+	background-image: url("image/newyork.jpg");
+	background-size: cover;
+}
+.Kathmandu{
+	background-image: url("image/kathmandu.jpg");
+	background-size: cover;
+}
