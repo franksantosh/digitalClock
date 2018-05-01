@@ -6,6 +6,8 @@ var layout = "<div class='clockbox'>"+
         "<h4 id='time'></h4>"+
     		"</div>";
 
+// call for the div
+
 function main(){
 	for (var i = 0; i < state.length; i++) {
 		var element = document.getElementsByClassName(state[i])[0].innerHTML = layout;
@@ -14,12 +16,11 @@ function main(){
 
 document.addEventListener('DOMContentLoaded', main);
 
-var HOUR, MINUTE, SECOND, TIME, PLACE;
+var TIME, PLACE;
+
+//get time and place id
 
 function count(){
-	HOUR = document.querySelectorAll("#hour");
-	MINUTE = document.querySelectorAll("#minute");
-	SECOND = document.querySelectorAll("#second");
 	TIME = document.querySelectorAll('#time');
 	PLACE = document.querySelectorAll('#place'); 
 }
@@ -43,8 +44,9 @@ setTimeout(function(){
 		}, 1000);
 },  1000);
 
-function getDate(x, y){
-	
+//convert time from utc to gmt
+
+function getDate(x, y){	
 	var time = new Date();
 	var utc = time.getTime() + time.getTimezoneOffset() * 60000;
 	var stateTime = new Date(utc + (3600000*(x)))
