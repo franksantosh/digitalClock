@@ -4,7 +4,6 @@
 	padding: 0;
 }
 main{
-	
 	margin: auto;
 	color: black;
 	display: inline-flex;
@@ -18,7 +17,7 @@ main{
 }
 .digital{
 	margin: 0 auto;
-	padding-top: 300px;
+	padding-top: 85%;
 }
 h3,h4{
 	color: #e9e9e9;
@@ -44,4 +43,44 @@ h3,h4{
 .Kathmandu{
 	background-image: url("image/kathmandu.jpg");
 	background-size: cover;
+}
+@media screen and (max-width: 970px){
+	main{
+		display: block;
+		
+	}
+	.Sydney, .Berlin, .Newyork, .Kathmandu{
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+    	width: 100%;
+	}
+}
+	@media screen and (max-width: 640px){
+	main{
+		display: block;
+		margin-left: auto;
+    	margin-right: auto;
+    	width: 100%;
+	}
+	.Sydney, .Berlin, .Newyork, .Kathmandu{
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+    	width: 100%;
+	}
+}
+	@media screen and (max-width: 320px){
+	main{
+		display: block;
+		margin-left: auto;
+    	margin-right: auto;
+    	width: 100%;
+	}
+	.Sydney, .Berlin, .Newyork, .Kathmandu{
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+    	width: 100%;
+	}
 }
