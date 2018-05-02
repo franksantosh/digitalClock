@@ -1,4 +1,3 @@
-
 *{
 	margin: 0;
 	padding: 0;
@@ -6,25 +5,27 @@
 main{
 	margin: auto;
 	color: black;
-	display: inline-flex;
-	width: 100%; 
-
+	display: flex;
+	width: 100%;
 }
 .Sydney, .Berlin, .Newyork, .Kathmandu{
 	height: 100vh;
 	width: 25%;
-	
+	text-align: center;
+	display: flex;
+	align-items: center;
 }
 .digital{
 	margin: 0 auto;
-	padding-top: 85%;
+	width: 100%;
+	text-align: center;
 }
 h3,h4{
 	color: #e9e9e9;
 	text-align: center;
 	font-size: 30px;
 	background-color: rgba(0,0,0,0.7);
-	padding: 15px;
+	text-align: center;	
 
 }
 
@@ -44,43 +45,49 @@ h3,h4{
 	background-image: url("image/kathmandu.jpg");
 	background-size: cover;
 }
-@media screen and (max-width: 970px){
+	@media screen and (max-width: 920px){
 	main{
 		display: block;
-		
+	}
+	.digital{
+    	width: 100%;
+    	height: 50%;
 	}
 	.Sydney, .Berlin, .Newyork, .Kathmandu{
-		display: block;
-    	margin-left: auto;
-    	margin-right: auto;
+		display: flex;
+		align-items: center;
     	width: 100%;
+    	height: 25vh;
 	}
 }
 	@media screen and (max-width: 640px){
 	main{
 		display: block;
-		margin-left: auto;
-    	margin-right: auto;
+	}
+	.digital{
     	width: 100%;
+    	height: 50%;
 	}
 	.Sydney, .Berlin, .Newyork, .Kathmandu{
-		display: block;
-    	margin-left: auto;
-    	margin-right: auto;
     	width: 100%;
+    	display: flex;
+		align-items: center;
+		height: 25vh;
 	}
 }
 	@media screen and (max-width: 320px){
 	main{
 		display: block;
-		margin-left: auto;
-    	margin-right: auto;
+	}
+	.digital{
     	width: 100%;
+    	height: 50%;
 	}
 	.Sydney, .Berlin, .Newyork, .Kathmandu{
-		display: block;
-    	margin-left: auto;
-    	margin-right: auto;
-    	width: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		height: 25vh;
+
 	}
 }

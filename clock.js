@@ -61,8 +61,8 @@ function getDate(x, y){
 				hr=hr-12;
 				session="PM"
 			}
-			hr=(hr<10) ? "0" + hr : hr;
+			
 			minutes=(minutes<10) ? "0" + minutes : minutes;
 			seconds=(seconds<10) ? "0" + seconds : seconds;
-	TIME[y].innerHTML = 'Time: ' + hr + ':' + minutes + ':'+seconds + ''+''+session;
+	TIME[y].innerHTML = hr + ':' + minutes + ':'+seconds + ''+''+session;
 }
